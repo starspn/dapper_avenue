@@ -1,7 +1,7 @@
 /**
  * Created by sibusiso on 2014/08/05.
  */
-var dapperApp = angular.module('dapperApp',['ngRoute']);
+var dapperApp = angular.module('dapperApp',['ngRoute','ui.bootstrap']);
 
 dapperApp.config(function($routeProvider){
 
