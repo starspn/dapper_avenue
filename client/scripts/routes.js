@@ -5,19 +5,19 @@ dapperApp.config(function($routeProvider){
 
     $routeProvider
         .when('/',{
-            templateUrl:'client/views/main.html',
+            templateUrl:'/views/main.html',
             controller:'mainController'
         })
         .when('/about',{
-            templateUrl:'client/views/about.html',
+            templateUrl:'/views/about.html',
             controller:'mainController'
         })
         .when('/howitworks',{
-            templateUrl:'client/views/howitworks.html',
+            templateUrl:'/views/howitworks.html',
             controller:'mainController'
         })
         .when('/journal',{
-            templateUrl:'client/views/journal.html',
+            templateUrl:'/views/journal.html',
             controller:'mainController'
         })
 });

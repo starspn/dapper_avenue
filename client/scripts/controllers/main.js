@@ -4,6 +4,14 @@
 /*var dapperApp = angular.module('dapperApp',[]);*/
 
 dapperApp.controller('mainController', function($scope){
+
+    $scope.centerImageResource ="/images/home/Default.jpg";
+
+    $scope.switchImage = function(selectedImage) {
+        $scope.centerImageResource = selectedImage;
+
+    };
+
     $scope.message = 'Everyone come and see how good I look!';
     $scope.howmessage = 'How it works content';
     $scope.journalmessage = 'The Journal content';
