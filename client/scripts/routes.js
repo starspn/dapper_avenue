@@ -20,4 +20,8 @@ dapperApp.config(function($routeProvider){
             templateUrl:'/views/journal.html',
             controller:'mainController'
         })
+        .when('/carouselmodal',{
+            templateUrl:'/views/modal-carousel.html',
+            controller:'ModalController'
+        })
 });

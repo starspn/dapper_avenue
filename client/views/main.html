@@ -1,138 +1,33 @@
-<style>
-    html 					{ overflow-y:scroll; }
-    body 					{ padding-top:50px; }
-    #todo-list 				{ margin-bottom:30px; }
-    #todo-form 	 			{ margin-bottom:50px; }
-    .vertical-gallery{
-        width: 100%;
-        height: 73px;
-        display: inline-block;
-        background-color: gray;
-        margin-bottom: 3px;
-        position:relative;
-    }
-    .selected-gallery{
-        width: 100%;
-        height: 100%;
-        display: block;
-        background-color: gray;
-    }
-    .horizontal-gallery{
-        width: 31.933%;
-        height: 97%;
-        display: inline-block;
-        background-color: gray;
-        padding: 0px;
-        background-image: url(/images/home/a4a.jpg);
-        position:relative;
-    }
-
-    .horizontal-gallery-wrap{
-        width:76%;
-        height:72px
-    }
-
-    .wrapper-left{position: relative;
-        height: 211px;
-        /*            width: 80%;*/
-        margin-bottom: 18px;
-
-    }
-    .right,.left{position:absolute;}
-    .right{right:0;width:24%
-
-    }
-    .left{left: 0;
-        width: 74.6%;
-        /*            height: 186px;*/
-    }
-
-    .thumbnail-div{
-        position: absolute;
-        bottom: 0;
-        line-height: 11px;
-        font-size: 6px;
-        background-color: black;
-        opacity: 0.8;
-        width: 100%;
-        color: white;
-        padding-left: 2px;
-    }
-
-    .left-number-span{
-        font-size: 29px;
-        left: 0;
-        position: absolute;
-        width: 19%;
-        height: 34px;
-    }
-
-    .left-icon-span{
-        font-size: 16px;
-        left: 0;
-        position: absolute;
-        width: 19%;
-        height: 20px;
-    }
-
-    .right-text-span2{
-        right: 0;
-        position: absolute;
-        width: 80%;
-        height: 20px;
-        text-align: left;
-        padding: 7px 1px;
-        font-size: 6px;
-    }
-
-    .right-text-span{
-        right: 0;
-        position: absolute;
-        width: 80%;
-        height: 34px;
-        text-align: left;
-        padding: 7px 1px;
-        font-size: 6px;
-    }
-
-    .right-main-div{
-        position: relative;
-        text-align: left;
-        margin: 18px 2px;
-        font-size: 7px;
-    }
-</style>
-
 <div ng-controller="mainController">
-    <hr style="width:75.6%;  margin-bottom:5px;" size="2">
+    <hr style="width:77.8%;  margin-bottom:5px;margin-top: 5px;" size="2">
     <div class="container" style="width:80%">
         <div style="float: left; width: 75%;" >
             <div class="wrapper-left">
                 <div class="left">
                     <div class="selected-gallery">
-                        <img ng-src="{{centerImageResource}}" height="225px" width= "100%">
+                        <img ng-src="{{centerImageResource}}" class="img-center">
                         <!--                    <span class="thumbnail-div">count: {{count}}</span>-->
                     </div>
                 </div>
 
                 <div class="right">
-                    <div class="vertical-gallery"  ng-mouseover="switchImage('images/home/Monday.jpeg')">
-                        <img ng-src="/images/home/Monday.jpeg" height="100%" width= "100%">
+                    <div class="vertical-gallery"  ng-mouseover="switchImage(1)">
+                        <img ng-src="/images/home/Monday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',1)">
                         <span class="thumbnail-div">Monday:IMPRESS</span>
                     </div>
                     <br/>
-                    <div class="vertical-gallery" ng-mouseover="switchImage('/images/home/Tuesday.jpeg')" >
-                        <img ng-src="/images/home/Tuesday.jpeg" height="100%" width= "100%">
+                    <div class="vertical-gallery" ng-mouseover="switchImage(2)" >
+                        <img ng-src="/images/home/Tuesday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',2)">
                         <span class="thumbnail-div">Tuesday:DAPPER</span>
                     </div>
                     <br/>
-                    <div class="vertical-gallery" ng-mouseover="switchImage('/images/home/Wednesday.jpg')" >
-                        <img ng-src="/images/home/Wednesday.jpg" height="100%" width= "100%">
+                    <div class="vertical-gallery" ng-mouseover="switchImage(3)" >
+                        <img ng-src="/images/home/Wednesday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',3)">
                         <span class="thumbnail-div">Wednesday:FLIRT</span>
                     </div>
                     <br/>
-                    <div class="vertical-gallery" ng-mouseover="switchImage('/images/home/Thursday.jpg')" ng-init="count=0">
-                        <img ng-src="/images/home/Thursday.jpg" height="100%" width= "100%">
+                    <div class="vertical-gallery" ng-mouseover="switchImage(4)" ng-init="count=0">
+                        <img ng-src="/images/home/Thursday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',4)">
                         <span class="thumbnail-div">Thursday:FLAUNT</span>
                     </div>
                     <br/>
@@ -141,74 +36,74 @@
             <!--            <br/>-->
             <div class="horizontal-gallery-wrap">
                 <div>
-                    <div class="horizontal-gallery" ng-mouseover="switchImage('/images/home/Sunday.jpg')">
-                        <img ng-src="/images/home/Sunday.jpg" height="100%" width= "100%">
+                    <div class="horizontal-gallery" ng-mouseover="switchImage(0)">
+                        <img ng-src="/images/home/Sunday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',0)">
                         <span class="thumbnail-div">Sunday:RELAX</span>
                     </div>
 
-                    <div class="horizontal-gallery" ng-mouseover="switchImage('/images/home/Saturday.jpg')">
-                        <img ng-src="/images/home/Saturday.jpg" height="100%" width= "100%">
+                    <div class="horizontal-gallery" ng-mouseover="switchImage(6)">
+                        <img ng-src="/images/home/Saturday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',6)">
                         <span class="thumbnail-div">Saturday:CASUAL</span>
                     </div>
 
-                    <div class="horizontal-gallery" ng-mouseover="switchImage('/images/home/Friday.jpg')" ng-init="count=0">
-                        <img ng-src="/images/home/Friday.jpg" height="100%" width= "100%">
+                    <div class="horizontal-gallery" ng-mouseover="switchImage(5)" ng-init="count=0">
+                        <img ng-src="/images/home/Friday-Square-C.jpg" class="img-thumbnail" ng-click="open('lg',5)">
                         <span class="thumbnail-div">Friday:XXX</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div style="float: right; width: 24.4%;">
-            <div style="text-align:center;margin:0; font-size:6.6px;">short blurb about us goes here, this will be crafted by fablian and tabs later. This is now a teaser space first...."Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem."
+        <div style="float: right; width: 24.4%;font-size: 11px;">
+            <div style="text-align:left;margin:0;">
+               <p> We know you’re looking for it. The one. That one shirt in your closet that was made for you. You know the one we mean.
+                <br/><br/>
+                    It’s the shirt you slip on when you’re late in the morning after a long night (of course we believe you were working                         late!). The one you finally leave the house in after trying on everything in your closet the day of your big                                     presentation. This is the shirt you instinctively reach for when you’re going straight from work to the movies… or                             for drinks with old friends… or on that hot date, because it works.            <br/><br/>
+                    It doesn’t just work. When you put it on, you feel taller. A little more self-assured. Bold. You receive the occasional                         compliment. And why not? You’re looking dapper.  
+                     <br/><br/>
+                    That’s where we come in. At Dapper Avenue, we make custom tailored men’s dress shirts designed with you in mind.
+                </p>
             </div>
 
             <hr style="margin:6px 2px;">
 
-            <div style="position: relative;height:89px;padding:0px 3px">
-                <div style="position: relative;text-align:left; 3px; font-size:7px;">
-                    <span class="left-number-span">1</span>
-                        <span class="right-text-span">
+            <div >
+                <div class="row" style="background-color:lightyellow; margin:5px 1px">
+                    <span class="col-xs-2 left-number-span">1</span>
+                        <span class="col-xs-10">
                             select your fabric from our curated collection that fits your personality and lifestyle
                         </span>
                 </div>
-                <br/>
-                <div style="position: relative;text-align:left;margin:18px 3px; font-size:7px;">
-                    <span class="left-number-span">2</span>
-                       <span class="right-text-span">
+                <div class="row" style="background-color:lightyellow; margin:5px 1px">
+                    <span class="col-xs-2 left-number-span">2</span>
+                       <span class="col-xs-10">
                            decide exactly how you want your shirt to look and make it uniquely yours
                         </span>
                 </div>
-                <br/>
-                <div style="position: relative;text-align:left;margin:18px 3px; font-size:7px;">
-                    <span class="left-number-span">3</span>
-                       <span class="right-text-span">
+                <div class="row" style="background-color:lightyellow; margin:5px 1px">
+                    <span class="col-xs-2 left-number-span">3</span>
+                       <span class="col-xs-10">
                            whip out the tape(or grap a friend) and start measuring yourself to ensure a perfect fit
                        </span>
                 </div>
             </div>
-            <br/>
             <hr style="margin:6px 2px;">
             <!--	            <br/>-->
-            <div style="position: relative;text-align:left; margin: 3px 7px;; font-size:7px;">
+            <div style="position: relative;text-align:left; margin: 3px 7px;; ">
                         <span class="left-icon-span">
                             <img ng-src="/images/home/cut-icon.png" height="100%" width= "15px">
                         </span>
                 <span class="right-text-span2">select your fabric </span>
             </div>
             <br/>
-            <div style="position: relative;text-align:left;margin: 3px 7px; font-size:7px;">
+            <div style="position: relative;text-align:left;margin: 3px 7px; ">
                        <span class="left-icon-span">
                             <img ng-src="/images/home/cut-icon.png" height="100%" width= "15px">
                         </span>
                 <span class="right-text-span2">decide exactly how </span>
             </div>
             <br/>
-            <div style="position: relative;text-align:left;margin: 3px 7px; font-size:7px;">
+            <div style="position: relative;text-align:left;margin: 3px 7px; ">
                        <span class="left-icon-span">
                            <img ng-src="/images/home/cut-icon.png" height="100%" width= "15px">
                        </span>
@@ -222,5 +117,5 @@
                </div>
     -->
 </div>
-<hr style="width:75.6% ; margin-top:5px;" size="2">
+<hr style="width:77.8% ; margin-top:5px;" size="2">
 </div>

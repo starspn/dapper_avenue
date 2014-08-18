@@ -10,11 +10,9 @@ var express = require('express'),
 
 
 app.get('/', function(req,res) {
-        res.sendfile(__dirname + '/client/index.html');
+        res.sendFile(__dirname + '/client/index.html');
 }); 
 
-app.post('/api/meetups', meetupCotroller.create);
-app.get('/api/meetups', meetupCotroller.list);
 
 app.use('/scripts', express.static(__dirname + '/client/scripts'));
 app.use('/views', express.static(__dirname + '/client/views'));
