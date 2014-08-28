@@ -126,3 +126,61 @@
     font-stretch: normal;
 }
 
+/*
+// HOW IT WORKS
+*/
+.block-section{
+    width: 30em;
+    padding: 21px 15px;
+    height: 13em;
+    white-space: normal;
+    text-align: center;
+    position: absolute;
+    transition: 0.8s;
+}
+
+.centered{
+    background: url('/images/howitworks/shirt.png') no-repeat;
+    background-position: center;
+   /*// background-image:  url('/images/howitworks/shirt.png');*/
+    margin: auto 0;
+    height: 100%;
+    width: 100%
+}
+
+.block-howitworks{
+    top: 8em;
+    left: 5em;
+}
+.block-love{
+    top: 19em;
+    left: 5em;
+
+}
+.block-fit{
+    top: 28em;
+    left: 5em;
+}
+.block-design{
+    top: 8em;
+    right: 5em;
+
+}
+.block-measure{
+    top: 25em;
+    right: 5em;
+}
+
+.block-shirt{
+    top: 50em;
+    right: 50em;
+}
+
+.block-stitch{
+    top: 40em;
+    left: 30em;
+}
+.block-order{
+    top: 35em;
+    right: 5em;
+}
