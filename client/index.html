@@ -7,40 +7,49 @@
     -->
     <link rel="stylesheet" href="/styles/lib/yeti_bootstrap.min.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
     <style type="text/css">
-        p{text-align:justify}
-        body{font-family: Helvetica,Arial,sans-serif}
+        p {
+            text-align: justify
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif
+        }
+
         .navbar-default {
             background-color: rgba(236, 218, 218, 0);
             border-color: #222222;
         }
-        
+
         .navbar-default .navbar-brand {
             color: #161313;
-            }
-        
-        .navbar-default .navbar-nav>li>a {
+        }
+
+        .navbar-default .navbar-nav > li > a {
             color: #161313;
         }
-        
+
         .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
             color: #161313;
             background-color: transparent;
         }
-        .nav>li>a{
-           padding: 2px 25px 0 0px!important;
+
+        .nav > li > a {
+            padding: 2px 5px 0 0px !important;
+            margin-right: 20px !important;
         }
-        .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
             color: #ffffff;
             background-color: rgba(191, 196, 193, 0.21);
         }
-        
+
         .navbar {
             margin-bottom: 2px;
             min-height: 0;
         }
-        
+
         .form-horizontal .form-group {
             /* margin-left: -15px; */
             margin-right: -84px;
@@ -51,21 +60,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
 
-    <!--<script src="client/scripts/lib/bootstrap.min.js"></script>
-    <script src="client/scripts/lib/angular-route.min.js"></script>-->
+
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/main.js"></script>
-    <script src="/scripts/lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
     <script src="/scripts/routes.js"></script>
+    <!--<script src="client/scripts/lib/bootstrap.min.js"></script>
+    <script src="client/scripts/lib/angular-route.min.js"></script>-->
+
+    <script src="/scripts/lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
 
 </head>
-<body >
+<body>
 
 <!-- HEADER AND NAVBAR -->
 <header>
     <nav class="navbar navbar-default" style="margin-top:4px">
-        <div class="container" style="width:80%">
-            
+        <div class="container" style="width:65%;min-width:1000px">
+
             <div class="row">
                 <div class="col-md-9 col-md-offset-9">
                     <div class="row">
@@ -73,57 +85,62 @@
                             login
                         </div>
                         <div class="col-md-3">
-                        cart
+                            cart
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-              <div class="col-md-5 col-md-offset-3">
-                <div class="navbar-header" ng-controller="mainController">
-                    <a class="navbar-brand" href="/"><img ng-src="{{logoImageResource}}"></a>
+                <div class="col-md-5 col-md-offset-3">
+                    <div class="navbar-header" ng-controller="mainController">
+                        <a class="navbar-brand" href="/"><img ng-src="{{logoImageResource}}"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-0">
+                    <form class="form-horizontal" role="form"
+                          style="padding-top: 4px;margin-left: 0px;width:100%;margin-top: 2px;box-shadow: 0px 0px 5px #888888;">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-0 col-sm-7">
+                                <a href="/" style="background-color:black;color:white;">FORGOTTEN PASSWORD</a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="/" style="background-color:black;color:green;">LOGIN</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <!--                      <button type="submit" class="btn btn-primary btn-xs">Sign in</button>-->
+                                <a href="/" style="color:black;">sign up as a new customer</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-0">
-              <form class="form-horizontal" role="form" style="padding-top: 4px;margin-left: 0px;width:100%;margin-top: 2px;box-shadow: 0px 0px 5px #888888;">
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-0 col-sm-7">
-                       <a href="/" style="background-color:black;color:white;">FORGOTTEN PASSWORD</a>
-                    </div>
-                    <div class="col-sm-2">
-                        <a  href="/" style="background-color:black;color:green;">LOGIN</a>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-<!--                      <button type="submit" class="btn btn-primary btn-xs">Sign in</button>-->
-                        <a href="/" style="color:black;">sign up as a new customer</a>
-                    </div>
-                  </div>
-                </form>
-              </div>
         </div>
     </nav>
     <nav class="navbar navbar-default">
-        <div class="container" style="width:80%">
+        <div class="container" style="width:65%;min-width:1000px">
 
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="#"><i class="fa fa-home"></i> DESIGN YOUR OWN</a></li>
-                <li><a href="#howitworks"><i class="fa fa-shield"></i> HOW IT WORKS</a></li>
-                <li><a href="#about"><i class="fa fa-comment"></i> ABOUT US</a></li>
-<!--                <li><a href="#journal"><i class="fa fa-edit"></i> THE JOURNAL</a></li>-->
+                <li><a href="#"> HOME</a></li>
+                <li><a href="#designown"> DESIGN YOUR OWN</a></li>
+                <li><a href="#howitworks"> HOW IT WORKS</a></li>
+                <li><a href="#about"> ABOUT US</a></li>
+                <!--                <li><a href="#journal"><i class="fa fa-edit"></i> THE JOURNAL</a></li>-->
             </ul>
         </div>
     </nav>
@@ -138,10 +155,10 @@
 
 </div>
 
-<!-- FOOTER
+<!-- FOOTER -->
 <footer class="text-center">
     footer text to follow
 </footer>
--->
+
 </body>
 </html>

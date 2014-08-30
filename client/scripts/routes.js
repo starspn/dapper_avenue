@@ -12,6 +12,10 @@ dapperApp.config(function($routeProvider){
             templateUrl:'/views/about.html',
             controller:'mainController'
         })
+        .when('/designown',{
+            templateUrl:'/views/designown.html',
+            controller:'designController'
+        })
         .when('/howitworks',{
             templateUrl:'/views/howitworks.html',
             controller:'mainController'

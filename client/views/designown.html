@@ -1,0 +1,1042 @@
+<div class="container-fluid">
+<style type="text/css">
+    .arrow-up {
+       width: 5px;
+        height: 5px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 10px solid gainsboro;
+        left: 38%;
+        position: absolute;
+        margin-top: 1px;
+    }
+    .tab-content {
+        background-color: gainsboro;
+        margin-top: 11px;
+        height: 340px;
+    }
+    .sub-tab-content {
+        padding-top: 11px;
+        height: 340px;
+    }
+    a {
+        color: black;
+    }
+    .nav-stacked {
+        float: left;
+        width: 27%;
+        padding: 13px;
+        height: 300px;
+    }
+    
+    
+    .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        line-height: 1;
+       width: 418px;
+        height: 479px;
+    }
+    .carousel-control.right,.carousel-control.left{
+        width: 11%;
+        height: 11%;
+        top: 0px;
+    }
+    hr{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .carousel-indicators {
+        top: 20px;
+    }
+</style>
+ <div class="row">
+    <div class="col-xs-12 col-md-11">
+    <hr>
+    </div>
+    </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <div style='height:479px'>
+              <div class="selected-gallery" style="background-color:none"   ng-show="1==singleModel || 2==singleModel">
+                        <div id="shirt">
+                        <div id="sba5" style="position: absolute; top: 10px; left: 15px;">
+                            <img alt="" style="height: 400px;" id="sba5img" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/StandardSleeve_WhiteLineIssueSolver.png">
+                        </div>
+                        <div id="sba" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="sbaimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/830_main_set2_0003.png" alt="">
+                        </div>
+                        <div id="ssl" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="sslimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/830_main_set2_0000.png" alt="">
+                        </div>
+                        <div id="scu" style="position: absolute; top: 10px; left: 15px;">
+                            <img  style="height: 400px;"id="scuimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/830_main_set1_0006.png" alt="">
+                        </div>
+                        <div id="sba1" style="position: absolute; top: 10px; left: 15px;">
+                            <img  style="height: 400px;"id="sba1img" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="spl" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="splimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/830_main_set3_0012.png" alt="">
+                        </div>
+                        <div id="sco_neru" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scoimg_neru" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="sco" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scoimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/830_main_set3_0002.png" alt="">
+                        </div>
+                        <div id="scob" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scobimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/1_main_button_0002.png" alt="">
+                        </div>
+                        <div id="scobd" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scobdimg" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="spo" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="spoimg" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="ssh" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="sshimg" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="sshb" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="sshbimg" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="scol" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scolimg" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/830_main_set3_0004.png" alt="">
+                        </div>
+                        <div id="scsic" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scsicimg" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="scui" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="scuiimg" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                        <div id="sba3" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="sba3img" src="https://16bea3ac3d3b1a740a95-d38d82eae36dea6bb4f1d1a7d2260c2b.ssl.cf2.rackcdn.com/1_main_button_0004.png" alt="">
+                        </div>
+                        <div id="sba4" style="position: absolute; top: 10px; left: 15px;">
+                            <img style="height: 400px;" id="sba4img" src="https://db4603e2f2fed3224e26-de35ecdfcd180157cded0d583e6fe3bf.ssl.cf2.rackcdn.com/Images/blank.png" alt="">
+                        </div>
+                    </div>
+      </div>
+      <div  id="measurementCarousel" ng-show="3==singleModel">
+          
+          <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                     
+                      <img ng-src="{{slide.image}}" style="margin:auto;" class="modal-img">
+<!--
+                          <div class="carousel-caption">
+                        <h4>Slide {{$index}}</h4>
+                        <p>{{slide.text}}</p>
+                      </div>
+-->
+                      
+                    </slide>
+                  </carousel>
+      </div>
+      
+    </div>
+    </div>
+    <div class="col-xs-12 col-md-7"  ng-show="1==singleModel">
+         <p style="background-color:black;color:white;width: 84px;">1. FABRICS</p>
+           <p>Your custom journey begins by selecting the right fabric to suit your needs. Whether it’s bold solids to boost your confidence, cheery pastels for a casual weekend, or preppy ginghams for a serious yet quirky twist, take your pick. Fabrics are 100% Cotton or Cotton-Silk blend.</p>
+           <tabset type="pills">
+            <tab>
+                <tab-heading>
+                   100% COTTON
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 <div class="row">
+                     <div class="col-xs-12 col-md-5">
+                         <p style="padding: 7px;">Breathable, easy to wash, and long-lasting, 100% cotton shirts are a staple in every man’s wardrobe. 
+                            <br/>
+Perfect for tropical our clime with its porousness and structured softness, our 100% cotton line keeps you looking sharp and unruffled even in hot and humid weather</p>
+                      </div>
+                      <div class="col-xs-12 col-md-7">
+                          I've got an HTML heading, and a select callback. Pretty cool!
+                      </div>
+                  </div>
+                 
+              </div>
+            </tab>
+            
+            <tab>
+              <tab-heading>
+                   COTTON-SILK BLEND
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 <div class="row">
+                     <div class="col-xs-12 col-md-5">
+                          <p style="padding: 7px;">The best of cotton and silk, in a lightweight, soft, yet sturdy fabric that  feels like breeze on your skin. 
+                            <br/>
+                            Silk gives this fabric extra softness and smoothness while cotton ensures that your shirt will still be structured and machine-wash friendly.
+                            </p> 
+                      </div>
+                      <div class="col-xs-12 col-md-7">
+                          I've got an HTML heading, and a select callback. Pretty cool!
+                      </div>
+                  </div>
+              </div>
+            </tab>
+          </tabset>
+    </div>
+    <div class="col-xs-12 col-md-7"  ng-show="'2'==singleModel">
+         <p style="background-color:black;color:white;width: 66px;">2. STYLE</p>
+           <p>The smallest details can make the biggest difference, and in a shirt, the subtle (often overlooked) details reflect your personality with finesse and flair. Choose from multiple customisations that flatter your look, and take control of the details  that matter!</p>
+           <tabset type="pills">
+            <tab>
+                <tab-heading>
+                   Collar
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                  <tabset vertical="true"  type="pills">
+                        <tab>
+                        
+                          <tab-heading>
+                            COLLAR TYPE
+                          </tab-heading>
+                         
+                          
+                         COLLAR TYPE I've got an HTML heading, and a select callback. Pretty cool!
+                          
+                        </tab>
+                        <tab>
+                        
+                          <tab-heading>
+                            COLLAR POINT DESIGN
+                          </tab-heading>
+                         
+                          
+                         COLLAR POINT DESIGN I've got an HTML heading, and a select callback. Pretty cool!
+                          
+                        </tab>
+                        <tab>
+                        
+                          <tab-heading>
+                            COLLAR WIDTH
+                          </tab-heading>
+                         
+                          
+                         COLLAR WIDTH I've got an HTML heading, and a select callback. Pretty cool!
+                          
+                        </tab>
+                        <tab>
+                        
+                          <tab-heading>
+                            BUTTONS
+                          </tab-heading>
+                         
+                          
+                         BUTTONS TYPE I've got an HTML heading, and a select callback. Pretty cool!
+                          
+                        </tab>
+                        <tab>
+                        
+                          <tab-heading>
+                            COLLAR FABRIC
+                          </tab-heading>
+                         
+                          
+                         COLLAR FABRIC I've got an HTML heading, and a select callback. Pretty cool!
+                          
+                        </tab>
+                        <tab>
+                        
+                          <tab-heading>
+                            OTHERS
+                          </tab-heading>
+                         
+                          
+                         OTHERS I've got an HTML heading, and a select callback. Pretty cool!
+                          
+                        </tab>
+                    
+                  </tabset>
+                 
+              </div>
+            </tab>
+            
+            <tab>
+              <tab-heading>
+                   SLEEVE
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                    <tabset vertical="true" type="pills">
+                            <tab>
+                              <tab-heading>
+                                CUFF TYPE
+                              </tab-heading>
+                              The Armhole --I've got an HTML heading, and a select callback. Pretty cool!
+                              <br/>
+                            </tab>
+                            <tab>
+                              <tab-heading>
+                                CUFF POINT DESIGN
+                              </tab-heading>
+                              The Bicep --I've got an HTML heading, and a select callback. Pretty cool!
+                            </tab>
+                            <tab>
+                              <tab-heading>
+                                CUFF FABRIC 
+                              </tab-heading>
+                              The Wrist -- I've got an HTML heading, and a select callback. Pretty cool!
+                            </tab>
+                            <tab>
+                              <tab-heading>
+                                SLEEVE FIT
+                              </tab-heading>
+                              The Arm -- I've got an HTML heading, and a select callback. Pretty cool!
+                            </tab>
+                             <tab>
+                              <tab-heading>
+                                SLEEVE PLACKET FIT
+                              </tab-heading>
+                              The Arm -- I've got an HTML heading, and a select callback. Pretty cool!
+                            </tab>
+                             <tab>
+                              <tab-heading>
+                                BUTTON CONFIGURATION
+                              </tab-heading>
+                              The Arm -- I've got an HTML heading, and a select callback. Pretty cool!
+                            </tab>
+                    </tabset>
+              </div>
+            </tab>
+            <tab>
+                <tab-heading>
+                   PLACKET
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            PLACKET 
+                          </tab-heading>
+                          The Shoulder -- I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                         <tab>
+                              <tab-heading>
+                                PLACKET FABRIC
+                              </tab-heading>
+                              The Arm -- I've got an HTML heading, and a select callback. Pretty cool!
+                            </tab>
+                      </tabset>
+                 
+              </div>
+            </tab>
+            
+            <tab>
+              <tab-heading>
+                   POCKET
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                  <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            POCKET
+                          </tab-heading>
+                         POCKET-- T-I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                        <tab>
+                          <tab-heading>
+                            POCKET BUTTON
+                          </tab-heading>
+                         POCKET-BUTTON- T-I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                        <tab>
+                          <tab-heading>
+                            POCKET FABRIC
+                          </tab-heading>
+                         POCKET-FABRIC- T-I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                        <tab>
+                          <tab-heading>
+                            POCKET BASE DESIGN
+                          </tab-heading>
+                         POCKET BASE DESIGN-- T-I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                      </tabset>
+              </div>
+            </tab>
+            <tab>
+                <tab-heading>
+                   BUTTONS
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 
+                <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            BUTTONS MATERIAL
+                          </tab-heading>
+                         The Waist I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                     
+                        <tab>
+                          <tab-heading>
+                            BUTTONS COLOUR
+                          </tab-heading>
+                          The Belly --I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                        <tab>
+                          <tab-heading>
+                            BUTTONS HOLE STITCHING 
+                          </tab-heading>
+                           The Hip I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                      </tabset>
+              
+              </div>
+            </tab>
+            <tab>
+                <tab-heading>
+                   TORSO
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 
+                <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            SHIRT FIT
+                          </tab-heading>
+                         The SHIRT TAIL I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                     
+                        <tab>
+                          <tab-heading>
+                            SHIRT TAIL
+                          </tab-heading>
+                          The SHIRT TAIL --I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                      </tabset>
+              
+              </div>
+            </tab>
+            <tab>
+                <tab-heading>
+                   OTHERS
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 
+                <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            PERSONALISATION
+                          </tab-heading>
+                         PERSONALISATION I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                     
+                        <tab>
+                          <tab-heading>
+                            MONGRAOM LOCATION
+                          </tab-heading>
+                          The SHIRT TAIL --I've got an HTML heading, and a select callback. Pretty cool!
+                        </tab>
+                      </tabset>
+              
+              </div>
+            </tab>
+          </tabset>
+    </div>
+    <div class="col-xs-12 col-md-7" ng-show="3==singleModel">
+         <p style="background-color:black;color:white;width: 137px;">3. MEASUREMENT</p>
+           <p>Your custom journey begins by selecting the right fabric to suit your needs. Whether it’s bold solids to boost your confidence, cheery pastels for a casual weekend, or preppy ginghams for a serious yet quirky twist, take your pick. Fabrics are 100% Cotton or Cotton-Silk blend.</p>
+           <tabset type="pills">
+            <tab select="carouselSwitch('01-Collar',1)">
+                <tab-heading>
+                   Collar
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                  <tabset vertical="true"  type="pills">
+                        <tab>
+                        
+                          <tab-heading>
+                            The Neck
+                          </tab-heading>
+                         <div class="sub-tab-content">
+                            <ol>
+                            <li> Hold the beginning of the measuring tape.</li>
+                            <li> Run the tape across the neck. Allow it to rest on the base of the neck.</li>
+                            <li> Close the loop. Make sure that it is firm but not tight. You should still be able to breathe with the measuring tape around your neck.</li>
+                            <li> Look at the number and add 1cm to it.</li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                    
+                  </tabset>
+                 
+              </div>
+            </tab>
+            
+            <tab select="carouselSwitch('11-Sleeve',3)">
+              <tab-heading>
+                   Sleeve
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                    <tabset vertical="true" type="pills">
+                            <tab select="carouselSwitch('08-Armhole',2)">
+                              <tab-heading>
+                                The Armhole
+                              </tab-heading>
+                              <div class="sub-tab-content">
+                                <ol>
+                                <li> Place the measuring tape at the junction on the sleeve and torso seams.</li>
+                                <li> Run the tape around your armhole and bring it back up to the starting point. Test that you will be comfortable moving your arm up and down.</li>
+                                <li> Read the measurement.</li>
+                                </ol>
+
+                                 <div class="row">
+                                   <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                       <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                                   </div>
+                                    <div class="col-xs-12 col-md-4">
+                                         <div class="progress-box">
+                                          <div class="percentage-cur" ng-init="selectedRange=0">
+                                            <span class="num">{{ selectedRange }} CM</span>
+                                          </div>
+                                          <div class="progress-bar progress-bar-slider">
+                                            <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                            <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                            <div class="percentage-cur">
+                                            <span class="num" style="left:0;position:absolute">0 CM</span>
+                                            <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                         </div>
+                            </tab>
+                            <tab select="carouselSwitch('09-Bicep',2)">
+                              <tab-heading>
+                                The Bicep
+                              </tab-heading>
+                               <div class="sub-tab-content">
+                               <ol>
+                                <li> Locate the widest part of the bicep. If you are unsure where there is, flex your bicep and find where the biggest bulge. If there is no bulge, anywhere between your elbow and shoulder will do.</li>
+                                <li> Run the measuring tape around the widest part of your bicep. </li>
+                                <li> Read the measurement.  If your biceps are bigger than your deltoids, please read the measurement while your flexing your bicep.</li>
+                                </ol>
+
+                                 <div class="row">
+                                   <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                       <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                                   </div>
+                                    <div class="col-xs-12 col-md-4">
+                                         <div class="progress-box">
+                                          <div class="percentage-cur" ng-init="selectedRange=0">
+                                            <span class="num">{{ selectedRange }} CM</span>
+                                          </div>
+                                          <div class="progress-bar progress-bar-slider">
+                                            <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                            <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                            <div class="percentage-cur">
+                                            <span class="num" style="left:0;position:absolute">0 CM</span>
+                                            <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </tab>
+                            <tab select="carouselSwitch('10-Wrist',2)">
+                              <tab-heading>
+                                The Wrist
+                              </tab-heading>
+                               <div class="sub-tab-content">
+                             <ol>
+                                <li> Find the widest part of your wrist. For most people, it is where your wrist bone is. If you wear watches frequently, or intend to wear watches with this shirt, please put on the biggest watch that you would wear on. If not, you will not be able to see the time with this shirt, or do a superman by wearing your watch over the sleeve.</li>
+                                <li> Run the measuring tape around the widest part of your wrist (with or without watch).</li>
+                                <li> Read the measure</li>
+                                </ol>
+
+                                 <div class="row">
+                                   <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                       <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                                   </div>
+                                    <div class="col-xs-12 col-md-4">
+                                         <div class="progress-box">
+                                          <div class="percentage-cur" ng-init="selectedRange=0">
+                                            <span class="num">{{ selectedRange }} CM</span>
+                                          </div>
+                                          <div class="progress-bar progress-bar-slider">
+                                            <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                            <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                            <div class="percentage-cur">
+                                            <span class="num" style="left:0;position:absolute">0 CM</span>
+                                            <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </tab>
+                            <tab select="carouselSwitch('10-Wrist',2)">
+                              <tab-heading>
+                                The Arm
+                              </tab-heading>
+                               <div class="sub-tab-content">
+                              <ol>
+                                <li> Put the measuring tape at the starting point of your shoulder seam. Use a finger to hold the tape in place.</li>
+                                <li> Use your other hand to bring the tape to your elbow.</li>
+                                <li>Swap hands, using the first finger to now hold the tape over your elbow.</li>
+                                 <li>Use your other hand to bring the tape to where you would like the sleeve to end. As a rule, for normal cuffs, the sleeve will end between your wrist and your knuckles, two-thirds of the way towards your knuckles. If the cuff is a French one, it should end just before your knuckle.</li>
+                                <li> Read the measure.</li>
+                                </ol>
+
+                                 <div class="row">
+                                   <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                       <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                                   </div>
+                                    <div class="col-xs-12 col-md-4">
+                                         <div class="progress-box">
+                                          <div class="percentage-cur" ng-init="selectedRange=0">
+                                            <span class="num">{{ selectedRange }} CM</span>
+                                          </div>
+                                          <div class="progress-bar progress-bar-slider">
+                                            <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                            <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                            <div class="percentage-cur">
+                                            <span class="num" style="left:0;position:absolute">0 CM</span>
+                                            <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                          </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </tab>
+                    </tabset>
+              </div>
+            </tab>
+            <tab  select="carouselSwitch('02-Shoulder',3)">
+                <tab-heading>
+                   Shoulder
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            The Shoulder
+                          </tab-heading>
+                           <div class="sub-tab-content">
+                            <ol>
+                            <li> Place the beginning of the measuring tape at the seam where the sleeve connects to the body of the shirt.</li>
+                            <li> Place a finger to hold the tape at the seam.</li>
+                            <li> Run the tape along the shoulder under you reach the jutting bone at the base of the neck.</li>
+                            <li> Place your other finger on that bone, holding the tape in place.</li>
+                            <li> Bring your first finger to replace your second finger. Keep holding the tape down on the bone.</li>
+                            <li> Use your free hand now to run the tape along the shoulder to the opposite seam.</li>
+                            <li> Hold the tape down over the opposite seam.</li>
+                            <li> Read the measurement.</li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                      </tabset>
+                 
+              </div>
+            </tab>
+            
+            <tab   select="carouselSwitch('03-Chest',3)">
+              <tab-heading>
+                   Chest
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                  <tabset vertical="true" type="pills">
+                        <tab>
+                          <tab-heading>
+                            The Chest
+                          </tab-heading>
+                           <div class="sub-tab-content">
+                            <ol>
+                            <li> Determine where the widest point of your chest is. Depending on how you work out (or not), it differs from person to person. As a rule, locate where the nipple is. The widest point of your chest should be just above the nipple.</li>
+                            <li> Run the measuring tape around the widest part of your chest. Make sure that the tape is horizontal to the ground. </li>
+                            <li> Take a deep breath, puff up your chest, and read the measurement. (if you prefer to look good and take shallow breathes while you are in the shirt skip this step and just read the measurements.</li>
+                           
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                      </tabset>
+              </div>
+            </tab>
+            <tab select="carouselSwitch('04-Waist',2)">
+                <tab-heading>
+                   Lower Body
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 
+                <tabset vertical="true" type="pills">
+                        <tab select="carouselSwitch('04-Waist',2)">
+                          <tab-heading>
+                            The Waist
+                          </tab-heading>
+                          <div class="sub-tab-content">
+                            <ol>
+                            <li> Find the narrowest part of your waist (For those without a waist, it should be above your belly button and below your ribs.</li>
+                            <li> Run the measuring tape around your waist. Make sure the tape is horizontal to the ground.</li>
+                            <li> Take a deep breath and read the measurement.</li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                     
+                        <tab select="carouselSwitch('05-Belly',2)">
+                          <tab-heading>
+                            The Belly
+                          </tab-heading>
+                           <div class="sub-tab-content">
+                            <ol>
+                            <li> Find the widest part of your belly. Depending on the type of belly (fat rolls, beer gut), it should be on or about your belly button.</li>
+                            <li> Run the measuring tape around the widest part of the belly. Make sure the tape is horizontal to the ground.</li>
+                            <li> Exhale deeply and let the belly fall out. Read the measurement.</li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                        <tab select="carouselSwitch('06-Hip',2)">
+                          <tab-heading>
+                            The Hip
+                          </tab-heading>
+                            <div class="sub-tab-content">
+                            <ol>
+                            <li> Find the hip. It should be where your pelvic bone begins.</li>
+                            <li> Run the measuring tape over pelvic bone. Make sure the tape is horizontal to the ground.</li>
+                            <li> Read the measurement.</li>
+                            
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                     
+                        <tab  select="carouselSwitch('07-Bum',2)">
+                          <tab-heading>
+                            The Buttocks
+                          </tab-heading>
+                            <div class="sub-tab-content">
+                            <ol>
+                            <li> Find the widest part of the buttocks. </li>
+                            <li> Run the measuring tape round the widest part of the buttocks. </li>
+                           
+                            <li> Read the measurement. </li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                      </tabset>
+              
+              </div>
+            </tab>
+            <tab select="carouselSwitch('04-Waist',2)">
+                <tab-heading>
+                   Length
+                <div class="arrow-up"></div>
+              </tab-heading>
+              <div class="tab-content">
+                 
+                <tabset vertical="true" type="pills">
+                        <tab select="carouselSwitch('04-Waist',2)">
+                          <tab-heading>
+                            The Waist
+                          </tab-heading>
+                          <div class="sub-tab-content">
+                            <ol>
+                            <li> Hold the beginning of the measuring tape.</li>
+                            <li> Run the tape across the neck. Allow it to rest on the base of the neck.</li>
+                            <li> Close the loop. Make sure that it is firm but not tight. You should still be able to breathe with the measuring tape around your neck.</li>
+                            <li> Look at the number and add 1cm to it.</li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                     
+                        <tab select="carouselSwitch('05-Belly',2)">
+                          <tab-heading>
+                            The Belly
+                          </tab-heading>
+                           <div class="sub-tab-content">
+                            <ol>
+                            <li> Hold the beginning of the measuring tape.</li>
+                            <li> Run the tape across the neck. Allow it to rest on the base of the neck.</li>
+                            <li> Close the loop. Make sure that it is firm but not tight. You should still be able to breathe with the measuring tape around your neck.</li>
+                            <li> Look at the number and add 1cm to it.</li>
+                            </ol>
+
+                             <div class="row">
+                               <div class="col-xs-12 col-md-3"  style="width: 30%!important;">
+                                   <img ng-src="/images/Measuring-tape.jpg" width="215px" height="129px">
+                               </div>
+                                <div class="col-xs-12 col-md-4">
+                                     <div class="progress-box">
+                                      <div class="percentage-cur" ng-init="selectedRange=0">
+                                        <span class="num">{{ selectedRange }} CM</span>
+                                      </div>
+                                      <div class="progress-bar progress-bar-slider">
+                                        <input class="progress-slider" type="range" min="0" max="100" ng-model="selectedRange" step="0.25">
+                                        <div class="inner" ng-style="{ width: selectedRange + 'px' || '0%' }"></div>
+                                        <div class="percentage-cur">
+                                        <span class="num" style="left:0;position:absolute">0 CM</span>
+                                        <span class="num" style="margin-right: 0;right:0;position:absolute">100 CM</span>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </tab>
+                      </tabset>
+              
+              </div>
+            </tab>
+          </tabset>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-11">
+      <hr>
+       <p style="background-color:black;color:white;width: 137px;">3 SIMPLE STEPS</p>
+    </div>
+   </div>
+   <div class="row">
+       <style type="text/css">
+           .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+                color: grey;
+                background-color: white;
+                border-color: white;
+            }
+           
+           .btn-primary {
+                color: black;
+                background-color: white;
+                border-color: white;
+            }
+           
+           .btn:active, .btn.active {
+                /* outline: 0; */
+                background-image: none;
+                -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+                box-shadow: none;
+            }
+       </style>
+       
+       
+    <div class="col-md-4">
+      <div class="btn-primary"  ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+             <div class="col-md-1">
+                <span style="font-size:37pt">1</span>
+            </div>
+            <div class="col-md-8" style="padding:2px 19px">
+               SELECT A FABRIC<br>
+pick from our curated<br> selection of fabrics
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+      <div  class="btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="2" btn-checkbox-false="0">
+            <div class="col-md-1">
+                <span style="font-size:37pt">2</span>
+            </div>
+            <div class="col-md-8" style="padding:2px 13px">
+                CUSTOMISE YOUR STYLE<br>
+decide on the customisations you want<br> on your shirt
+            </div>
+        
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div   class="btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="3" btn-checkbox-false="0">
+           <div class="col-md-2">
+                <span style="font-size:37pt">3</span>
+            </div>
+            <div class="col-md-8" style="padding:2px 3px">
+                MEASURE UP<br>
+whip out the tape and<br> measure yourself
+            </div>
+        </div>
+    </div>
+   </div>
+</div>

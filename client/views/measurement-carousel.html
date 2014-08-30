@@ -1,0 +1,72 @@
+<div ng-controller="CarouselDemoCtrl">
+  <style type="text/css">
+      .modal-img {
+          margin: auto;
+          height: 369px;
+          width: 100%;
+        }
+
+
+        .carousel-control {
+          width: 0px !important;
+          color: #744545 !important;
+        }
+        .carousel-inner {
+           height: 384px !important;
+        }
+      .row {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    </style>
+   <!-- <script type="text/ng-template" id="myModalContent.html"> -->
+<!--
+          <div class="modal-header">
+                <h5 class="modal-title">Tittle here! ???</h5>
+            </div>
+-->
+           <div class="modal-body" style="padding-bottom: 0px">
+             <div>
+                  <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                     <div class="row">
+                      <div class="col-md-7">
+                      <img ng-src="{{slide.image}}" style="margin:auto;" class="modal-img">
+<!--
+                          <div class="carousel-caption">
+                        <h4>Slide {{$index}}</h4>
+                        <p>{{slide.text}}</p>
+                      </div>
+-->
+                      </div>
+                      <div class="col-md-5">
+                      <p>{{slide.text}}</p>
+                        <p class="modal-detail-p">
+                            {{slide.detail1}}
+                        </p>
+                         <p class="modal-detail-p">
+                            {{slide.detail2}}
+                        </p>
+                         <p class="modal-detail-p">
+                            {{slide.detail3}}<a href="#">here</a>.
+                        </p>
+                        
+                  </div>
+                    </slide>
+                  </carousel>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">Customise</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+     
+<!--    </script>-->
+
+<!--
+    <button class="btn btn-default" ng-click="open()">Open me!</button>
+    <button class="btn btn-default" ng-click="open('lg')">Large modal</button>
+    <button class="btn btn-default" ng-click="open('sm')">Small modal</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+-->
+</div>

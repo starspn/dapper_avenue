@@ -153,3 +153,35 @@ var ModalInstanceCtrl = function ($scope, $modalInstance, days) {
     $modalInstance.dismiss('cancel');
   };
 };
+
+designController = function ($scope) {
+    
+$scope.singleModel = 1;
+  $scope.tabs = [
+    { title:'Dynamic Title 1', content:'Dynamic content 1' },
+    { title:'Dynamic Title 2', content:'Dynamic content 2' }
+  ];
+
+  $scope.alertMe = function() {
+    setTimeout(function() {
+      alert('You\'ve selected the alert tab!');
+    });
+  };
+    
+$scope.carouselSwitch=function(folder,size) {
+  $scope.myInterval = 6000;
+  var slides = $scope.slides = [];
+  $scope.addSlide = function(folder,number) {
+   number = number + 1;
+    slides.push({
+        size: size,
+      image: '/images/instruction-images/' + folder + '/Slide0' + number + '.jpg',
+      text: 'Instruction ' + number
+    });
+  };
+    
+  for (var i=0; i<size; i++) {
+    $scope.addSlide(folder,i);
+  }
+};
+};

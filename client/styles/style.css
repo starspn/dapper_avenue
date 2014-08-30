@@ -2,8 +2,7 @@
         width: 100%;
 /*        height: 73px;*/
         display: inline-block;
-        background-color: gray;
-        margin-bottom: 3px;
+       margin-bottom: 3px;
         position:relative;
     }
     .selected-gallery{
@@ -16,21 +15,26 @@
         width: 31.933%;
         height: 97%;
         display: inline-block;
-        background-color: gray;
         padding: 0px;
-        background-image: url(/images/home/a4a.jpg);
         position:relative;
+    }
+
+   .horizontal-gallery:hover {
+        opacity: 0.3; filter: alpha(opacity=30); 
+    }
+    .vertical-gallery:hover {
+        opacity: 0.3; filter: alpha(opacity=30); 
     }
 
     .horizontal-gallery-wrap{
         width:77%;
-        height:144px;
+        height:162px;
     }
 
     .wrapper-left{position: relative;
-        height: 442px;
+        height: 485px;
         /*            width: 80%;*/
-        margin-bottom: 5px;
+        margin-bottom: 4px;
 
     }
     .right,.left{position:absolute;}
@@ -38,7 +42,7 @@
 
     }
     .left{left: 0;
-        width: 74.9%;
+        width: 68%;
         /*            height: 186px;*/
     }
 
@@ -95,8 +99,8 @@
 
 /*override .img-thumbnail*/
     .img-thumbnail{
-       width: 193px;
-        height: 146px;
+       width: 100%;
+        height: 160px;
         padding: 0;
     }
 
@@ -125,6 +129,83 @@
     font-size: 12px;
     font-stretch: normal;
 }
+.nav-pills>li.active>a{
+    background-color: gainsboro;
+    color: white;
+}
+.nav-pills>li.active>a:hover{
+    background-color: gainsboro;
+    color: white;
+}
+.nav-pills>li.active>a:focus{
+    background-color: gainsboro;
+    color: white;
+}
+.nav-pills>li>a:hover{
+    color: white;
+}
+
+.progress-box {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.progress-box .percentage-cur .num {
+	margin-right: 5px;
+}
+
+.progress-box .progress-bar {
+	width: 100%;
+	height: 12px;
+	background: #f2f1f1;
+	margin-bottom: 3px;
+	border: 1px solid #dfdfdf;
+	box-shadow: 0 0 2px #D5D4D4 inset;
+  position: relative;
+    float: none !important;
+}
+
+.progress-box .progress-bar .inner {
+  position: relative;
+	width: 0;
+	height:100%;
+	background: #239bd6; 
+}
+
+.progress-bar .inner {
+	height: 0;
+	width: 0;
+	transition: all 1s ease-out !important;
+}
+
+.progress-bar-slider .inner {
+  transition: none !important;
+}
+
+.progress-bar-slider .inner:after {
+  content: " ";
+  width: 5px;
+  height: 14px;;
+  background-color:#ccc;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+  margin: 0px;
+}
+
+.progress-slider {
+  opacity: 0;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 1;
+}
 
 /*
 // HOW IT WORKS
@@ -142,7 +223,7 @@
 .centered{
     background: url('/images/howitworks/shirt.png') no-repeat;
     background-position: center;
-   /*// background-image:  url('/images/howitworks/shirt.png');*/
+    /*// background-image:  url('/images/howitworks/shirt.png');*/
     margin: auto 0;
     height: 100%;
     width: 100%
